@@ -1,0 +1,11 @@
+.worktrees/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+config.toml
+logs/
+.vscode/
+.coverage

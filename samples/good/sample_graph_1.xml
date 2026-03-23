@@ -1,0 +1,57 @@
+<graph>
+    <id>g1</id>
+    <name>Sample Graph 1</name>
+    <nodes>
+        <node>
+            <id>a</id>
+            <name>A name</name>
+        </node>
+        <node>
+            <id>b</id>
+            <name>B name</name>
+        </node>
+        <node>
+            <id>c</id>
+            <name>C name</name>
+        </node>
+        <node>
+            <id>d</id>
+            <name>D name</name>
+        </node>
+        <node>
+            <id>e</id>
+            <name>E name</name>
+        </node>
+    </nodes>
+    <edges>
+        <node>
+            <id>e1</id>
+            <from>a</from>
+            <to>e</to>
+            <cost>42</cost>
+        </node>
+        <node>
+            <id>e2</id>
+            <from>a</from>
+            <to>b</to>
+            <cost>50</cost>
+        </node>
+        <node>
+            <id>e3</id>
+            <from>b</from>
+            <to>e</to>
+            <cost>4.2</cost>
+        </node>
+        <node>
+            <id>e4</id>
+            <from>c</from>
+            <to>d</to>
+        </node>
+        <node>
+            <id>e5</id>
+            <from>a</from>
+            <to>a</to>
+            <cost>0.42</cost>
+        </node>
+    </edges>
+</graph>

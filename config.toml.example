@@ -1,0 +1,20 @@
+# Application configuration
+# Copy this file to config.toml and adjust values for your environment.
+# Any value can be overridden by setting the corresponding environment variable
+# with the APP_ prefix (e.g. APP_DB_USERNAME).
+
+[database]
+username = "graphuser"
+password = "graphpass"
+name = "graphdb"
+host = "localhost"
+port = 5432
+
+[logging]
+# Log level: debug, info, warning, error, critical
+level = "info"
+# Path to the log file (used by the web backend; CLI apps ignore this)
+file_path = "logs/app.log"
+# Where to send log output: "stdout", "file", or "both" (web backend only)
+# CLI apps always log to stdout regardless of this setting
+output = "both"

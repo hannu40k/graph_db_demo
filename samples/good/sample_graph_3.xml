@@ -1,0 +1,71 @@
+<graph>
+    <id>g3</id>
+    <name>Five Node Multi-Path Graph</name>
+    
+    <nodes>
+        <node>
+            <id>a</id>
+            <name>Node A</name>
+        </node>
+        <node>
+            <id>b</id>
+            <name>Node B</name>
+        </node>
+        <node>
+            <id>c</id>
+            <name>Node C</name>
+        </node>
+        <node>
+            <id>d</id>
+            <name>Node D</name>
+        </node>
+        <node>
+            <id>e</id>
+            <name>Node E</name>
+        </node>
+    </nodes>
+
+    <edges>
+        <!-- Path of length 4: a -> b -> c -> d -> e -->
+        <node>
+            <id>e1</id>
+            <from>a</from>
+            <to>b</to>
+            <cost>1</cost>
+        </node>
+        <node>
+            <id>e2</id>
+            <from>b</from>
+            <to>c</to>
+            <cost>1</cost>
+        </node>
+        <node>
+            <id>e3</id>
+            <from>c</from>
+            <to>d</to>
+            <cost>1</cost>
+        </node>
+        <node>
+            <id>e4</id>
+            <from>d</from>
+            <to>e</to>
+            <cost>1</cost>
+        </node>
+
+        <!-- Path of length 3: a -> c -> d -> e -->
+        <node>
+            <id>e5</id>
+            <from>a</from>
+            <to>c</to>
+            <cost>2</cost>
+        </node>
+
+        <!-- Path of length 2: a -> d -> e -->
+        <node>
+            <id>e6</id>
+            <from>a</from>
+            <to>d</to>
+            <cost>3</cost>
+        </node>
+    </edges>
+</graph>

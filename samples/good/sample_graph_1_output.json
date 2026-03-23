@@ -1,0 +1,38 @@
+{
+    "answers": [
+        {
+            "paths": {
+                "from": "a",
+                "to": "e",
+                "paths": [
+                    [
+                        "a",
+                        "b",
+                        "e"
+                    ],
+                    [
+                        "a",
+                        "e"
+                    ]
+                ]
+            }
+        },
+        {
+            "cheapest": {
+                "from": "a",
+                "to": "e",
+                "path": [
+                    "a",
+                    "e"
+                ]
+            }
+        },
+        {
+            "cheapest": {
+                "from": "a",
+                "to": "h",
+                "path": false
+            }
+        }
+    ]
+}

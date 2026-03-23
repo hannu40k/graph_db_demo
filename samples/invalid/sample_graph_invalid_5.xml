@@ -1,0 +1,30 @@
+<graph>
+    <!-- Graph is invalid because edge node has multiple to/from elements -->
+    <id>g1</id>
+    <name>Sample Graph 1</name>
+    <nodes>
+        <node>
+            <id>a</id>
+            <name>A name</name>
+        </node>
+        <node>
+            <id>b</id>
+            <name>B name</name>
+        </node>
+    </nodes>
+    <edges>
+        <node>
+            <id>e2</id>
+            <from>a</from>
+            <from>b</from>
+            <to>b</to>
+            <cost>50</cost>
+        </node>
+        <node>
+            <id>e5</id>
+            <from>a</from>
+            <to>a</to>
+            <cost>0.42</cost>
+        </node>
+    </edges>
+</graph>

@@ -1,0 +1,34 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: graphuser
+      POSTGRES_PASSWORD: graphpass
+      POSTGRES_DB: graphdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U graphuser -d graphdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      APP_DB_HOST: db
+      APP_DB_PORT: 5432
+      APP_DB_USERNAME: graphuser
+      APP_DB_PASSWORD: graphpass
+      APP_DB_NAME: graphdb
+      APP_LOG_OUTPUT: stdout
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
